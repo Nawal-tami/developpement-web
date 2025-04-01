@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Nawal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <a href="#" class="logo">Nawal</a>
         <nav class="navigation">
+            <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -20,7 +21,7 @@
     <section class="main">
         <div>
             <h2>Hello, I'm Nawal <br><span>Software and Data Engineering Student at ENSA Khouribga</span></h2>
-            <a href="#projects" class="main-btn">View My Work</a>
+            <a href="#about" class="main-btn">About Me</a>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -30,55 +31,92 @@
         </div>
     </section>
 
-    <section class="cards" id="projects">
+    <section class="about-section" id="about">
+        <h1 class="title">About Me</h1>
+        <p>Hi, I'm Nawal, a first-year software and data engineering student. I have a strong interest in backend development and data science, particularly machine learning and deep learning.</p>
+        <h2>Background</h2>
+        <p>I've always been fascinated by technology and its potential to solve real-world problems. After diving into coding, I realized that backend engineering and working with data are my true passions.</p>
+        <h2>Skills and Technologies</h2>
+<ul>
+    <li><i class="fab fa-python"></i> Python</li>
+    <li><i class="fab fa-html5"></i> HTML</li>
+    <li><i class="fab fa-css3-alt"></i> CSS</li>
+    <li><i class="fas fa-database"></i> MySQL</li>
+    <li><i class="fab fa-flask"></i> Flask</li>
+
+</ul>
+        <h2>Future Goals</h2>
+        <p>My goal is to continue learning and growing as a backend developer and eventually work on innovative data-driven solutions that can make a difference.</p>
+        <h2>Get in Touch</h2>
+        <p>Feel free to check out my projects and reach out if you’d like to collaborate or learn more about my work. You can contact me through the <a href="#contact"><b>Contact</b></a> page.</p>
+    </section>
+
+    <section class="projects-section" id="projects">
         <h2 class="title">Projects</h2>
         <div class="content">
             <div class="card">
                 <div class="icon">
                     <i class="fas fa-book"></i>
                 </div>
-                <div class="info">
-                    <h3>Library Management System</h3>
-                    <p>Technologies Used: Python, Flask, MySQL, HTML, CSS</p>
-                </div>
+                <h2>Library Management</h2>
+                <p>The Library Management System is a web application designed to facilitate the management of a library's resources. It allows administrators to efficiently manage the library's collection, including adding, updating, retrieving, and deleting books.</p>
+                <p><strong>Technologies Used:</strong> Flask, MySQL, HTML, CSS, JavaScript</p>
             </div>
             <div class="card">
                 <div class="icon">
                     <i class="fas fa-image"></i>
                 </div>
-                <div class="info">
-                    <h3>Image Processing</h3>
-                    <p>Technologies Used: Python</p>
-                </div>
+                <h2>Image Processing</h2>
+                <p>This Image Processing project leverages Python's powerful libraries, NumPy and Matplotlib, to perform various operations on digital images.</p>
+                <p><strong>Technologies Used:</strong> Python, NumPy, Matplotlib</p>
             </div>
         </div>
     </section>
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's Work Together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
+    <main>
+        <section class="contact-section" id="contact">
+            <h2 class="title">Let's Work Together</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
                     <h3>Phone</h3>
                     <p>0716836217</p>
                 </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
                     <h3>Email</h3>
                     <p>nawal10tami@gmail.com</p>
                 </div>
             </div>
-        </div>
-    </section>
+    
+            <h2>Social Media</h2>
+            <p>Connect with me on social media:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/your-facebook-profile" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/your-github-profile" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nawal Tami. All Rights Reserved.</p>
+    </footer>
+    
 
 </body>
 </html>
 
-    
