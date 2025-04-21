@@ -130,57 +130,13 @@
 
         .security-icon {
             font-size: 1.5rem;
-            color: #4CAF50;
+            color: #4caf50;
         }
 
-        /* Animated Button */
-        .action-btn {
-            display: inline-block;
-            background: white;
-            color: #e73c7e;
-            padding: 0.9rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            cursor: pointer;
-            border: none;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .action-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
-            color: #23a6d5;
-        }
-
-        .action-btn::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transform: translateX(-100%);
-            transition: 0.5s;
-        }
-
-        .action-btn:hover::after {
-            transform: translateX(100%);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
+        /* Responsive for small screens */
+        @media (max-width: 480px) {
             .confirmation-card {
-                padding: 1.5rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
+                padding: 1.8rem;
             }
         }
     </style>
@@ -188,27 +144,22 @@
 <body>
 
     <div class="confirmation-card">
-        <h2>Registration Complete!</h2>
-        
+        <h2>Registration Complete</h2>
         <div class="data-item">
-            <span class="data-label">Full Name</span>
-            <div class="data-value"><?php echo htmlspecialchars($_POST['name'] ?? 'John Doe'); ?></div>
+            <span class="data-label">Full Name:</span>
+            <span class="data-value"><?php echo htmlspecialchars($_POST['name'] ?? ''); ?></span>
         </div>
-        
+
         <div class="data-item">
-            <span class="data-label">Email Address</span>
-            <div class="data-value"><?php echo htmlspecialchars($_POST['email'] ?? 'john@example.com'); ?></div>
+            <span class="data-label">Email Address:</span>
+            <span class="data-value"><?php echo htmlspecialchars($_POST['email'] ?? ''); ?></span>
         </div>
-        
-        <div class="data-item">
-            <span class="data-label">Password</span>
-            <div class="password-display">
-                <span class="hidden-password">••••••••••</span>
-                <span class="security-icon">✓</span>
-            </div>
+
+        <div class="data-item password-display">
+            <span class="data-label">Password:</span>
+            <span class="hidden-password">*********</span>
+            <span class="security-icon">🔒</span>
         </div>
-        
-        <a href="index.php" class="action-btn">Return to Form</a>
     </div>
 
 </body>
